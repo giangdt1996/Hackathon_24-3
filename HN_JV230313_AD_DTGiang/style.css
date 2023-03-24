@@ -1,0 +1,82 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+.header{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    width: 100%;
+    height: 70px;
+    background-image:linear-gradient(rgb(228, 82, 20), rgb(212, 116, 116));
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding:20px 40px;
+
+}
+.top{
+    padding-top: 50px;
+    font-size: 30px;
+    color:rgb(217, 216, 216) ;
+    text-align: center;
+}
+.listhead{
+    list-style: none;;
+    display: flex;
+    gap:20px;
+}
+.listhead li:hover{font-size: 20px;cursor: pointer;
+}
+.search{width:200px}
+img{width:200px;
+height:200px}
+.container{
+    background-color: rgb(217, 216, 216);
+    display: flex;
+justify-content: space-between;
+
+padding: 20px 50px;
+cursor: pointer;
+gap:30px}
+
+ .menu {
+list-style-type: none;
+height:100px;
+}
+.menu li:hover {color: red;
+font-size: 20px;}
+.aside{background-color: white}
+.content{height: 300px;
+background-color: white;
+text-align: center;
+}
+.container p{color:red}
+.container b:hover{font-size: larger;}
+footer{
+    border-top: 5px solid orangered;
+    border-bottom: 5px solid black;
+    background-color:  rgb(217, 216, 216);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap:20px
+}
+button:hover{cursor: pointer;}
+/*Mobile Reponsive*/
+@media screen and (max-width: 440px) {
+    .header{flex-direction: column;
+    height: fit-content;
+    gap:10px}
+    .container{
+        flex-direction: column;
+        text-align: center;
+    }
+    footer{
+        flex-direction: column;
+        align-items:center;
+    }
+    .top{display: none;}
+}
